@@ -29,8 +29,4 @@ This repository serves as a collection of PHP scripts covering fundamental to ad
    ```
    Navigate to any assignment folder and click a PHP script to view/execute it.
 
----
 
-## 📝 Assignment Topics
-
-- **Assignment 1**: Introduction to PHP, checking PHP version (`phpversion()`), environment configuration (`phpinfo()`), form handling (`POST`), and superglobals like `$_SERVER['REMOTE_ADDR']`.
