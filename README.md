@@ -25,12 +25,8 @@ This repository serves as a collection of PHP scripts covering fundamental to ad
 2. Start the **Apache** service from the XAMPP Control Panel.
 3. Open a browser and visit:
    ```text
-   http://localhost/Aditya_PHP_5th_Sem/
+   http://localhost/Aditya_PHP_5th_Sem/Assigement-1/
    ```
    Navigate to any assignment folder and click a PHP script to view/execute it.
 
----
 
-## 📝 Assignment Topics
-
-- **Assignment 1**: Introduction to PHP, checking PHP version (`phpversion()`), environment configuration (`phpinfo()`), form handling (`POST`), and superglobals like `$_SERVER['REMOTE_ADDR']`.
