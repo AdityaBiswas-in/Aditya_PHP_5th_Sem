@@ -1,11 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parse URL Components</title>
+</head>
+<body>
+
+    <h2>Parse URL Components</h2>
+
+    <form method="POST">
+        <label>Enter URL:</label><br>
+        <input type="text" name="url" value="" style="width: 350px;" required><br><br>
+        <input type="submit" name="submit" value="Parse URL">
+    </form>
+    <br>
+
 <?php
+if (isset($_POST['submit'])) {
+    $url = trim($_POST['url']);
+    $parsed_url = parse_url($url);
 
-$url = 'https://www.w3resource.com/php-exercises/php-basic-exercises.php';
-
-$parsed_url = parse_url($url);
-
-echo "Scheme : " . ($parsed_url['scheme'] ?? '') . "<br>";
-echo "Host : " . ($parsed_url['host'] ?? '') . "<br>";
-echo "Path : " . ($parsed_url['path'] ?? '') . "<br>";
-
+    echo "<b>Scheme :</b> " . ($parsed_url['scheme'] ?? 'N/A') . "<br>";
+    echo "<b>Host :</b> " . ($parsed_url['host'] ?? 'N/A') . "<br>";
+    echo "<b>Path :</b> " . ($parsed_url['path'] ?? 'N/A') . "<br>";
+}
 ?>
+
+</body>
+</html>
