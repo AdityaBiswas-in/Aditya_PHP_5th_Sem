@@ -17,7 +17,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $input = $_POST['array'];
-    $arr = array_map('intval', array_map('trim', explode(',', $input)))
+    $arr = array_map('intval', array_map('trim', explode(',', $input)));
     if (count($arr) != 4) {
         echo "<b>Error:</b> Please enter exactly 4 integers.";
     } else {
