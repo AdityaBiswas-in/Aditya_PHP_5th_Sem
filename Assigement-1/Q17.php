@@ -71,6 +71,75 @@
             font-size: 14px;
         }
     </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 40px;
+        }
+        .container {
+            width: 360px;
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h2 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 8px;
+        }
+        label {
+            font-weight: bold;
+            font-size: 14px;
+            color: #444;
+        }
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            margin-top: 10px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .msg-error {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #ffe6e6;
+            color: #cc0000;
+            border-left: 4px solid #cc0000;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .msg-success {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #e6ffed;
+            color: #008822;
+            border-left: 4px solid #008822;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
 
