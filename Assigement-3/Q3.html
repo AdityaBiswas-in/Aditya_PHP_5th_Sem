@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <!-- Hyperlinking external CSS stylesheet -->
+    <link rel="stylesheet" href="Q3.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>User Registration</h2>
+
+    <!-- Form submitting to Q3.php for server-side validation -->
+    <form method="POST" action="Q3.php" novalidate>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address">
+        </div>
+
+        <div class="form-group">
+            <label>Gender:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="mobile">Mobile No:</label>
+            <input type="text" id="mobile" name="mobile" placeholder="e.g. +919876543210 or 9876543210">
+        </div>
+
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="">-- Select Country --</option>
+                <option value="India">India</option>
+                <option value="United States">United States</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="At least 8 characters">
+        </div>
+
+        <div class="form-group">
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password">
+        </div>
+
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="agree" value="1">
+                I agree to the terms and condition
+            </label>
+        </div>
+
+        <input type="submit" name="register" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
