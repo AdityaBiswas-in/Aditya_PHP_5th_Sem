@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <!-- Hyperlinking external CSS stylesheet -->
+    <link rel="stylesheet" href="Q2.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>User Registration</h2>
+
+    <!-- Form submitting to Q2.php -->
+    <form method="POST" action="Q2.php">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Enter username">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter email address">
+        </div>
+
+        <div class="form-group">
+            <label>Gender:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="mobile">Mobile No:</label>
+            <input type="text" id="mobile" name="mobile" pattern="[0-9]{10}" title="Please enter a 10-digit mobile number" required placeholder="Enter 10-digit mobile number">
+        </div>
+
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">-- Select Country --</option>
+                <option value="India">India</option>
+                <option value="United States">United States</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter password">
+        </div>
+
+        <div class="form-group">
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required placeholder="Confirm password">
+        </div>
+
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="agree" value="1" required>
+                I agree to the terms and condition
+            </label>
+        </div>
+
+        <input type="submit" name="register" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
