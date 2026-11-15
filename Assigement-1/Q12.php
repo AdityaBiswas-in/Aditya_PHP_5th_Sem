@@ -14,7 +14,7 @@
 
 <?php
 if (isset($_POST['submit'])) {
-    echo $x; // triggers undefined variable error
+    echo $x;
     print_r(error_get_last());
 }
 ?>
