@@ -1,9 +1,8 @@
 <?php
-// Database connection details
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "workspace"; // Target database as shown in your phpMyAdmin
+$db   = "workspace";
 
 $conn = mysqli_connect($host, $user, $pass, $db);
 
@@ -11,7 +10,6 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// Check if form is submitted via POST
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
     $username = trim($_POST['username']);
     $email = trim($_POST['email']);
